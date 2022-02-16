@@ -1,0 +1,8 @@
+*~
+pagina-web/pythonassipt/output
+pagina-web/pythonassipt/cache
+pagina-web/pythonassipt/__pycache__
+pagina-web/pythonassipt/.doit.db
+**/.ipynb_checkpoints/
+
+
