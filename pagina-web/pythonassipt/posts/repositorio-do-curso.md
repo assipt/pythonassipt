@@ -17,6 +17,8 @@ Também está incluído o material que eu usei para gerar esta página web!
 
 Não vou entrar em detalhes mas sabe quanto você tem uma planilha, planilha.xlsx por exemplo e você cria uma versão nova, aí coloca um número no final: `planilha_1.xlsx`? E aí você vai criando versões novas... Finalmente depois de um tempo você acha que o trabalho acabou e então você chama esta versão de `planilha_final.xlsx`. Nessa o teu colega usa a planilha e faz uma modificaçãozinha e chama de `planilha_final_final.xlsx`.
 
+<!-- TEASER_END -->
+
 E essa coisa vai evoluindo ao longo dos anos e um dia você está em campo precisa urgente da planilha e pede para um outro colega te mandar a planilha. Aí ele te manda o arquivo `planilha_final2_final3.xlsx`. Você começa a usar a planilha e percebe que está bem diferente do que você se lembrava. Aí você liga o f_d_-s_ e faz uma versão "final": `planilha_versão_final_mesmo.xlsx`
 
 Quem nunca passou por isso que jogue a primeira pedra. O mesmo problema acontece em desenvolvimento de software. Mas aqui o problema pode ser bem maior. Ao invés de uma única planilha, você pode ter dezenas ou centenas de arquivos onde um número grande de pessoas estão trabalhando.
