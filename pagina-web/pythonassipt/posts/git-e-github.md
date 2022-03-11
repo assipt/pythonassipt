@@ -98,6 +98,9 @@ nothing to commit, working tree clean
 pjabardo@makhno:~/pythonassipt$ 
 ```
 
+## Trabalhando no repositório
+
+
 Mas existe algo novo: eu estou trabalhando neste repositório *neste momento* mas em outro lugar. Então posso ir para lá e ver o que está acontecendo:
 
 ```shell script
@@ -133,3 +136,110 @@ pjabardo@makhno:~/Documents/assipt/pythonassipt$
 
 ```
 
+Agora preciso gravar esta modificação (a inclusão do arquivo que vai gerar esta página web). Para isso se usa o comando `git commit`:
+
+```shell script
+pjabardo@makhno:~/Documents/assipt/pythonassipt$ git commit
+[main af4addf] Escrevendo sobre o git e github
+ 1 file changed, 135 insertions(+)
+ create mode 100644 pagina-web/pythonassipt/posts/git-e-github.md
+```
+
+Isso vai abrir um editor de texto onde você pode descrever as modificações que você fez. Esse é o texto que aparace no comando `git log`:
+
+```
+commit af4addf5d8dde8c8eee05c680f1fc35f108f599a (HEAD -> main)
+Author: Paulo José Saiz Jabardo <pjabardo@ipt.br>
+Date:   Fri Mar 11 16:33:56 2022 -0300
+
+    Escrevendo sobre o git e github
+```
+
+Aqui temos algumas informações. O monte de letrinhas é um [*hash*](https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica) que caracteriza as modificações que eu fiz. Também tem o autor e a data das modificações. Finalmente o texto que escrevi no editor que abriu ao executar o comando `git commit`.
+
+
+É lógico que ainda estou editando este arquivo. Então o `git status` vai mostrar isso:
+
+```shell script
+jabardo@makhno:~/Documents/assipt/pythonassipt$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   pagina-web/pythonassipt/posts/git-e-github.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Se eu quiser ver a diferença do que eu fiz em relação ao último commit (quando executei o comando `git commit`, basta usar o comando `git diff`:
+
+```shell script
+pjabardo@makhno:~/Documents/assipt/pythonassipt$ git diff
+diff --git a/pagina-web/pythonassipt/posts/git-e-github.md b/pagina-web/pythonassipt/posts/git-e-github.md
+index 3f9cbac..8a3354f 100644
+--- a/pagina-web/pythonassipt/posts/git-e-github.md
++++ b/pagina-web/pythonassipt/posts/git-e-github.md
+@@ -98,6 +98,9 @@ nothing to commit, working tree clean
+ pjabardo@makhno:~/pythonassipt$ 
+ ```
+ 
++## Trabalhando no repositório
++
++
+ Mas existe algo novo: eu estou trabalhando neste repositório *neste momento* mas em outro lugar. Então posso ir para lá e ver o que está acontecendo:
+ 
+ ```shell script
+@@ -133,3 +136,43 @@ pjabardo@makhno:~/Documents/assipt/pythonassipt$
+ 
+ ```
+ 
++Agora preciso gravar esta modificação (a inclusão do arquivo que vai gerar esta página web). Para isso se usa o comando `git commit`:
++
++```shell script
++pjabardo@makhno:~/Documents/assipt/pythonassipt$ git commit
++[main af4addf] Escrevendo sobre o git e github
++ 1 file changed, 135 insertions(+)
++ create mode 100644 pagina-web/pythonassipt/posts/git-e-github.md
++```
++
++Isso vai abrir um editor de texto onde você pode descrever as modificações que você fez. Esse é o texto que aparace no comando `git log`:
++
++```
++commit af4addf5d8dde8c8eee05c680f1fc35f108f599a (HEAD -> main)
++Author: Paulo José Saiz Jabardo <pjabardo@ipt.br>
++Date:   Fri Mar 11 16:33:56 2022 -0300
++
++    Escrevendo sobre o git e github
++```
++
++Aqui temos algumas informações. O monte de letrinhas é um [*hash*](https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica) que caracteriza as modificações que eu fiz. Também tem o autor e a data das modificações. Finalmente o texto que escrevi no editor que abriu ao executar o comando `git commit`.
++
++
++É lógico que ainda estou editando este arquivo. Então o `git status` vai mostrar isso:
++
++```shell script
++jabardo@makhno:~/Documents/assipt/pythonassipt$ git status
++On branch main
++Your branch is ahead of 'origin/main' by 1 commit.
++  (use "git push" to publish your local commits)
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++       modified:   pagina-web/pythonassipt/posts/git-e-github.md
++
++no changes added to commit (use "git add" and/or "git commit -a")
++```
++
++Se eu quiser ver a diferença do que eu fiz em relação ao último commit (quando executei o comando `git commit`, basta usar o comando `git diff`:
++
+pjabardo@makhno:~/Documents/assipt/pythonassipt$ 
+
+```
+
+Esse diff mostra o que tem de diferença em relação à última versão. Para salvar esta última versão, basta executar o comando `git commit -a`. A opção `-a` já executa o comando `git add`.
+
+Novamente vai abrir um editor onde vou descrever as modificações realizadas.
