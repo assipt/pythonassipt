@@ -243,3 +243,33 @@ pjabardo@makhno:~/Documents/assipt/pythonassipt$
 Esse diff mostra o que tem de diferença em relação à última versão. Para salvar esta última versão, basta executar o comando `git commit -a`. A opção `-a` já executa o comando `git add`.
 
 Novamente vai abrir um editor onde vou descrever as modificações realizadas.
+
+
+Se você quiser, você pode enviar estas modificações para a núvem, neste caso o GitHub, com o comando `git push`:
+
+```shell script
+pjabardo@makhno:~/Documents/assipt/pythonassipt$ git commit -a
+[main 728e3d0] Trabalhando na descrição do git e github.
+ 1 file changed, 110 insertions(+)
+pjabardo@makhno:~/Documents/assipt/pythonassipt$ git push
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 4.63 KiB | 4.63 MiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+To https://github.com/assipt/pythonassipt
+   42af482..728e3d0  main -> main
+```
+
+Agora o repositório no github <https://github.com/assipt/pythonassipt> está com as modificações que eu fiz.
+
+## Algumas omissões
+É lógico que é necessário ter uma conta no GitHub. Existe ainda a questão da autenticação e outros detalhes. O objetivo aqui é descrever brevemente o Git e o GitHub.
+
+## Como criar um repositório novo
+
+O jeito mais fácil é você fazer isso no GitHub. Se você já tem uma conta e está logado, vá para sua conta. No meu caso é <https://github.com/pjabardo/>. Aí, clica no no botão + no canto superior direito (ver a figura a seguir) e clique em *New Repository* e siga as instruções. Você clona este repositório e começa a trabalhar nos arquivos. Adicionando arquivos novos e modificações, realizando os *commits* e depois dando os *push*s da vida.
+
+
