@@ -19,11 +19,13 @@ Quando eu falo gerenciar os arquivos de um projeto de software, eu quero dizer q
 
 Para começar vamos tentar trabalhar com o repositório do curso mesmo.
 
+<!-- TEASER_END -->
+
 Uma coisa importante: aqui estamos falando de projetos de software pois este é um curso de programação e a ferramenta foi criada para este tipo de aplicação. Mas na verdade, o controle de versão pode ser usado em *qualquer tipo de arquivo e aplicação*. Mas a coisa funciona bem com arquivos texto. Eu uso bastante na elaboração de relatórios em [LaTeX](https://pt.wikipedia.org/wiki/LaTeX). 
 
 ## Instalando o Git
 
-Para instalar o Git, baixe o software em <https://git-scm.com/> e instale. O Git é uma ferramenta de linha de comando. Se você está no Linux ou MacOS, isso é fácil. No Windows as coisas são um pouco mais chatas mas a versão do Windows fo Git vem com uma ferramente chamada Git Bash que nada mais é que um terminal, bem parecido com Linux onde você pode usar o Git sem dificuldades.
+Para instalar o Git, baixe o software em <https://git-scm.com/> e instale. O Git é uma ferramenta de linha de comando. Se você está no Linux ou MacOS, isso é fácil. No Windows as coisas são um pouco mais chatas mas a versão do Windows do Git vem com uma ferramente chamada Git Bash que nada mais é que um terminal, bem parecido com o terminal do Linux onde você pode usar o Git sem dificuldades.
 
 Existem algumas interfaces gráficas para o Git. Quem tiver aversão à linha de comando, pode optar por usar alguma destas interfaces. Duas populares são:
 
@@ -40,9 +42,9 @@ O Git trabalha com arquivos. Geralmente isso é feito localmente. Mas hoje é in
  * [Bitbucket](https://bitbucket.org)
  * [GitLab](https://gitlab.com)
 
-Com estes serviços você pode armazenar seu projeto na nuvem e colaborar com outras pessoas.
+Com estes serviços você pode armazenar seu projeto na nuvem e colaborar com outras pessoas. Vamos usar aqui o GitHub que é o mais popular.
 
-Vamos começar com um projeto que já existe: o próprio repositório do curso! O primeiro passo é baixar o repositório da nuvem. O termo exato é *clonar*. Talvez alguém já tenha ouvido falar de ferramentas mais antigas como CVS ou SubVersion. Estes sistemas são centralizados. O Git é um sistema de controle de versões distribuído e tem várias vantagens (na pior das hipósteses você pode trabalhar maneira semelhante ao CVS ou SubVersion). Mas a primeira etapa é clonar o repositório. Você está realmente baixando o repositório *inteiro*. Não se preocupe, isso é mais eficiente do que parece.
+Vamos começar com um projeto que já existe: o próprio repositório do curso! O primeiro passo é baixar o repositório da nuvem. O termo exato é *clonar*. Talvez alguém já tenha ouvido falar de ferramentas mais antigas como CVS ou Subversion. Estes sistemas são centralizados. O Git é um sistema de controle de versões distribuído e tem várias vantagens (na pior das hipósteses você pode trabalhar maneira semelhante ao CVS ou Subversion). Mas a primeira etapa é clonar o repositório. Você está realmente baixando o repositório *inteiro*. Não se preocupe, isso é mais eficiente do que soa.
 
 ```bash
 pjabardo@makhno:~$ git clone https://github.com/assipt/pythonassipt
@@ -86,8 +88,7 @@ Date:   Fri Mar 4 07:38:12 2022 -0300
 
 ```
 
-O comando `git log` permite você ver toda a história do repositório. Já o comando
-`git status` permite ver o estado atual do repositório. Como acabamos de clonar, não existe nada interessante:
+O comando `git log` permite você ver toda a história do repositório. Já o comando `git status` permite ver o estado atual do repositório. Como acabamos de clonar, não existe nada interessante:
 
 ```bash
 pjabardo@makhno:~/pythonassipt$ git status
@@ -368,7 +369,7 @@ O primeiro passo é fazer um *fork* (basicamente clonar o projeto para a sua con
 
 ![Fork no GitHub](../../images/github-fork-marca.png)
 
-Neste momento o navegodor vai para [*a página de `pjsjipt`*](https://github.com/pjsjipt/scripts-python).
+Neste momento o navegodor vai para [*a página de pjsjipt*](https://github.com/pjsjipt/scripts-python).
 
 
 Aí nosso colega vai clonar o repositório:
@@ -451,7 +452,7 @@ Agora abre uma janela mostrando o que foi feito (as diferenças). Para criar o p
 ![Open pull request no GitHub](../../images/open-pull-request.png)
 
 
-Agora ele clica no botão e o pull request foi aberto. Eu vou ser notificado, dependendo das configurações do GitHub pode ser até por email. Na minha conta, na aba Pull requests vai aparecer o número 1 (um pull request). Clicando no no Pull request, eu posso inspecionar o trabalho. Se eu gostar, basta clicar no botão *Merge pull request* que vai trazer estas modificações do repositório.
+Agora ele clica no botão e o pull request foi aberto. Eu vou ser notificado, dependendo das configurações do GitHub pode ser até por email. Na minha conta, na aba Pull requests vai aparecer o número 1 (um pull request). Clicando no no Pull request, eu posso inspecionar o trabalho. Se eu gostar, basta clicar no botão *Merge pull request* que vai trazer estas modificações do repositório. Mas se eu não gostar posso avisá-lo e aí pode rolar uma discussão saudável (ou nem tanto...).
 
 ![Open pull request no GitHub](../../images/merge-pull-request.png)
 
