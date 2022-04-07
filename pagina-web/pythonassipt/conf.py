@@ -143,8 +143,10 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/posts/python-na-assipt", "Python na ASSIPT"),
+        ("/posts/videos-das-aulas", "Vídeos das aulas"),
         ("https://groups.google.com/g/pythonassipt", "Lista de discussão"),
         ("https://github.com/assipt/pythonassipt", "Material no GitHub"),
+        ("https://www.youtube.com/channel/UC1FCevE58sn5o4or2-cmWNw/featured", "Canal da ASSIPT no youtube"),
         ("/archive.html", "Arquivo"),
         ("/categories/", "Tags"),
         ("/rss.xml", "Feed RSS"),
